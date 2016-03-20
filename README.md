@@ -43,8 +43,8 @@ Generally, it consists of a couple of components - `bee`, which shows a single b
 * Actual tests, obviously  
 * More modularization - split `main` into `bees-container` and `game-controller` (which would include the hit and reset buttons)  
 * use a build tool (gulp / webpack), which would allow us to:  
-** use a transpiler to allow us to use ES6 features
+** use a transpiler to allow us to use ES6 features  
 ** use a linter to enforce a rigid coding style  
-** use SASS / LESS for better CSS
+** use SASS / LESS for better CSS  
 * add a 'new game' button, and give the user the option to input the number of bees they want  
 
