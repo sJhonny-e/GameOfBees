@@ -1,0 +1,9 @@
+<div ng-class="[$ctrl.beeModel.state, { hit: $ctrl.hit }]">
+	<img src="{{ $ctrl.imageUrl }}" />
+	 <span class="label" ng-class="{ 'label-info': !$ctrl.hit , 'label-danger': $ctrl.hit } ">
+	 	{{ $ctrl.beeModel.hitpoints }}
+	 </span>
+
+
+
+</div>

@@ -1,0 +1,35 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-8 main-section">
+			<div class="page-header">
+				<h1>
+					A Game of Bees <small>Gotta kill 'em all!</small>
+				</h1>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="queen-container">
+						<bee bee-model="$ctrl.queen"></bee>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2" ng-repeat="worker in $ctrl.workers">
+					<bee bee-model="worker"></bee>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2" ng-repeat="drone in $ctrl.drones">
+					<bee bee-model="drone"></bee>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 action-panel">
+			<button type="button" class="btn btn-primary btn-lg btn-block" ng-click="$ctrl.playARound()" ng-disabled="$ctrl.gameOver">
+				Hit Someone!
+			</button>
+			<img ng-if="$ctrl.gameOver" class="game-over" src="http://entertainmentlawbrazil.files.wordpress.com/2012/03/game_over.jpg" />
+		</div>
+	</div>
+</div>

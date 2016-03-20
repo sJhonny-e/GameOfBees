@@ -1,0 +1,16 @@
+bee .hit {
+  background-color: red;
+}
+
+bee img {
+	height: 150px;
+	width: 150px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.queen-container div:not(.dead) img {
+	height: auto;
+	width: auto;
+}
